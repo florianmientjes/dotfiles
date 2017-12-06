@@ -1,0 +1,1 @@
+alias cil='itermocil --here '

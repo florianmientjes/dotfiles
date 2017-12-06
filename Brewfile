@@ -5,6 +5,7 @@ tap "homebrew/science"
 tap "caskroom/drivers"
 tap "caskroom/versions"
 tap "caskroom/cask"
+tap "tomanthony/brews"
 
 brew "coreutils"
 brew 'grc'
@@ -16,6 +17,8 @@ brew 'rbenv'
 brew 'ruby-build'
 brew 'sshrc'
 brew 'yarn'
+
+brew 'itermocil'
 
 brew 'matplotlib'
 
