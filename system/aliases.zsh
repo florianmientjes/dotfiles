@@ -13,7 +13,8 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias g="git"
-alias h="history"
+alias h="history 1"
+alias hg="history 1 | grep "
 alias ~="cd ~"
 
 alias sudo='sudo '
