@@ -1,3 +1,5 @@
 alias d='docker $*'
 alias dcom='docker-compose $*'
 alias dmac='docker-machine $*'
+alias dmac-ssh='docker-machine ssh $DOCKER_MACHINE_NAME'
+alias denv='. docker-machine-env'

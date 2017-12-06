@@ -1,0 +1,22 @@
+#!/bin/sh
+#
+# Set the docker-machine environment
+#
+# normally you have to eval the output of docker-machine env to set the
+# docker environment variables. To automate this I write the commands to
+# a file and source it. The sourced variables only apply to the context of this
+# script, so you have to prefix it with '. '
+#
+#
+# USAGE:
+#
+#   $ . docker-machine-env {machine_name}
+#   # => sets the current env vars to the docker machine
+#
+
+
+docker-machine env ${1} >> /tmp/setdockerenv
+
+source /tmp/setdockerenv
+
+rm /tmp/setdockerenv
