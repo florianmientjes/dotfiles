@@ -46,6 +46,5 @@ cask "spectacle"
 cask "spotify"
 cask "sublime-text"
 cask "transmit"
-cask "vanilla"
 
 mas 'Trello', id: 1278508951
