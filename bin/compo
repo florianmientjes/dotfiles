@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# Usage: compo
+#
+#!/bin/bash
+
+if [[ $DOCKER_MACHINE_NAME = 'gcloud-docker-wrf' ]]; then
+	#statements
+	docker-compose -f docker-compose.wrf.yml $@
+fi
+
+
+if [[ $DOCKER_MACHINE_NAME = 'gcloud-docker-export' ]]; then
+	#statements
+	docker-compose -f docker-compose.export.yml $@
+fi

@@ -13,4 +13,17 @@
 #   $ e .
 #   $ e /usr/local
 #   # => opens the specified directory in your editor
-exec "$EDITOR" "${1:-.}"
+
+
+if [ $# -eq 0 ]; then
+    myarray=(`find ./ -maxdepth 1 -name "*.code-workspace"`)
+    if [ ${#myarray[@]} -gt 0 ]; then 
+        echo "opening code project $(find . -type f -name '*.code-workspace')"
+        open $(find . -type f -name '*.code-workspace')
+    else
+        echo "opening code with path"
+        exec "$EDITOR" "${1:-.}"
+    fi
+else
+    exec "$EDITOR" "${1:-.}"
+fi
