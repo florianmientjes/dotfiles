@@ -1,50 +1,44 @@
 tap "homebrew/core"
 tap "homebrew/bundle"
-tap "homebrew/php"
 tap "homebrew/science"
 tap "caskroom/drivers"
 tap "caskroom/versions"
 tap "caskroom/cask"
 tap "tomanthony/brews"
 
-brew "coreutils"
+brew 'git-flow-avh'
 brew 'grc'
-brew 'grunt-cli'
 brew 'hub'
 brew 'mysql'
-brew 'node'
+brew 'nvm'
 brew 'rbenv'
 brew 'ruby-build'
-brew 'sshrc'
-brew 'yarn'
+brew "coreutils"
+# brew 'sshrc'
 
 brew 'itermocil'
-
-brew 'matplotlib'
-
-brew 'php71'
-brew 'composer'
 
 brew 'mas'
 
 cask "1password"
+cask "alfred"
+cask "caskroom/drivers/sonos"
 cask "dash"
 cask "discord"
 cask "docker"
 cask "dropbox"
-cask "etcher"
-cask "evernote"
 cask "google-chrome"
 cask "google-cloud-sdk"
+cask "insomnia"
 cask "iterm2"
+cask "omnidisksweeper"
 cask "qgis"
-cask "sequel-pro"
-cask "sketch"
-cask "slack"
-cask "caskroom/drivers/sonos"
+cask "sequel-pro-nightly"
 cask "spectacle"
 cask "spotify"
-cask "sublime-text"
 cask "transmit"
+cask "visual-studio-code"
+cask "yakyak"
 
 mas 'Trello', id: 1278508951
+mas 'Bear', id: 1091189122
