@@ -35,4 +35,4 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
-defaults write com.apple.dock autohide-time-modifier -float 0.5
+defaults write com.apple.dock autohide-time-modifier -float 0
