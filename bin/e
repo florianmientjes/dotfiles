@@ -18,8 +18,8 @@
 if [ $# -eq 0 ]; then
     myarray=(`find ./ -maxdepth 1 -name "*.code-workspace"`)
     if [ ${#myarray[@]} -gt 0 ]; then 
-        echo "opening code project $(find . -type f -name '*.code-workspace')"
-        open $(find . -type f -name '*.code-workspace')
+        echo "opening code project $(find ./ -maxdepth 1 -type f -name '*.code-workspace')"
+        open $(find ./ -maxdepth 1 -type f -name '*.code-workspace')
     else
         echo "opening code with path"
         exec "$EDITOR" "${1:-.}"
