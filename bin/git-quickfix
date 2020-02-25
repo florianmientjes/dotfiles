@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# create a new fix/branch with current changes, push them and start a pull-request
+
+git checkout -q -b $1 --no-track develop
+
+git add -A && git commit -m "$2"
+
+git push -u origin $1
+
+hub pull-request
